@@ -1,0 +1,98 @@
+package com.sxt.utils;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import com.sxt.obj.GameObjAdv;
+public class GameUtils 
+{
+    public static Image DiceTitle = Toolkit.getDefaultToolkit().getImage("assets/Title.png");
+    public static Image Remo = Toolkit.getDefaultToolkit().getImage("assets/Remo.png");
+    public static Image Edge = Toolkit.getDefaultToolkit().getImage("assets/Edge.png");
+    public static Image MonsterSleep = Toolkit.getDefaultToolkit().getImage("assets/MonsterSleep.png");
+    public static Image MonsterFight = Toolkit.getDefaultToolkit().getImage("assets/MonsterFight.png");
+    public static Image Line = Toolkit.getDefaultToolkit().getImage("assets/3DLine.png");
+    public static Image Lock = Toolkit.getDefaultToolkit().getImage("assets/Lock.png");
+    public static Image PlayerHpBar = Toolkit.getDefaultToolkit().getImage("assets/PlayerHpBar.png");
+    public static Image BossHpBar = Toolkit.getDefaultToolkit().getImage("assets/BossHpBar.png");
+
+    public static Image[] Mag =
+    {
+        null,
+        Toolkit.getDefaultToolkit().getImage("assets/Mag1.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/Mag2.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/Mag3.png")
+    };
+    public static Image[][] Dice = 
+    {
+        {   Toolkit.getDefaultToolkit().getImage("assets/DICE/R1.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/R2.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/R3.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/R4.png")},
+        {   Toolkit.getDefaultToolkit().getImage("assets/DICE/B1.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/B2.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/B3.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/B4.png")},
+        {   Toolkit.getDefaultToolkit().getImage("assets/DICE/G1.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/G2.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/G3.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/G4.png")},
+        {   Toolkit.getDefaultToolkit().getImage("assets/DICE/P1.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/P2.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/P3.png"),
+            Toolkit.getDefaultToolkit().getImage("assets/DICE/P4.png")}
+    };
+    public static Image[] BossDice =
+    {
+        null,
+        Toolkit.getDefaultToolkit().getImage("assets/BDICE/1.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/BDICE/2.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/BDICE/3.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/BDICE/4.png")
+    };
+    public static Image[] VFX_R =
+    {
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R1.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R2.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R3.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R4.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R5.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R6.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R7.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R8.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R9.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/R10.png"),
+        null
+    };
+    public static Image[] VFX_W =
+    {
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W1.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W2.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W3.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W4.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W5.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W6.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W7.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W8.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W9.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/W10.png"),
+        null
+    };
+    public static Image[] VFX_G =
+    {
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G1.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G2.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G3.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G4.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G5.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G6.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G7.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G8.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G9.png"),
+        Toolkit.getDefaultToolkit().getImage("assets/VFX/G10.png"),
+        null
+    };
+
+    public static List<GameObjAdv> gameObjListAdv = new ArrayList<>();
+    public static List<GameObjAdv> HUDObjListAdv = new ArrayList<>();
+    public static List<GameObjAdv> removeObjListAdv = new ArrayList<>();
+}
